@@ -129,7 +129,7 @@ p {
   right: 0;
   z-index: 100;
   height: var(--nav-height);
-  background: rgba(248, 245, 240, 0.92);
+  background: rgba(247, 249, 249, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -255,11 +255,11 @@ p {
 
 /* ---- HERO ---- */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding-top: calc(var(--nav-height) + var(--space-sm));
-  padding-bottom: var(--space-sm);
+  padding-top: calc(var(--nav-height) + var(--space-xl));
+  padding-bottom: var(--space-xl);
   position: relative;
   overflow: hidden;
 }
