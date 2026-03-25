@@ -362,8 +362,8 @@ p {
 
 .hero__image-card {
   width: 100%;
-  max-width: 420px;
-  aspect-ratio: 3/4;
+  max-width: 320px;
+  aspect-ratio: 1/1;
   border-radius: var(--radius-xl);
   overflow: hidden;
   position: relative;
