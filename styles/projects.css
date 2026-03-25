@@ -256,6 +256,7 @@
   right: calc(25% / 2);
   height: 2px;
   background: linear-gradient(to right, var(--color-accent), var(--color-accent-2));
+
   z-index: 0;
 }
 
