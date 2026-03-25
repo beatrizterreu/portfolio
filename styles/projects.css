@@ -4,8 +4,8 @@
 
 /* ---- PROJECT HERO ---- */
 .project-hero {
-  padding-top: calc(var(--nav-height) + var(--space-xl));
-  padding-bottom: var(--space-xl);
+  padding-top: calc(var(--nav-height) + var(--space-2xl));
+  padding-bottom: var(--space-2xl);
 }
 
 .project-hero__back {
