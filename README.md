@@ -1,6 +1,6 @@
 # Beatriz Terreu — Portfolio Profesional
 
-Portfolio de diseño UX/UI y Product Design de Beatriz Terreu.
+Portfolio de Beatriz Terreu.
 
 🌐 **Live site:** [beatrizterreu.github.io/portfolio](https://beatrizterreu.github.io/portfolio/)
 

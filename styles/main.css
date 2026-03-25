@@ -146,6 +146,9 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  box-sizing: border-box;
 }
 
 .nav__logo {
@@ -200,7 +203,7 @@ p {
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 500;
-  transition: background var(--transition), transform var(--transition);
+  transition: background var(--transition);
 }
 
 .nav__cta:hover {
@@ -451,7 +454,6 @@ p {
 .btn-primary:hover {
   background: #0F766E;
   border-color: #0F766E;
-  box-shadow: 0 8px 24px rgba(13,148,136,0.35);
 }
 
 .btn-secondary {
@@ -471,7 +473,6 @@ p {
 
 .btn-dark:hover {
   background: var(--color-accent);
-  box-shadow: 0 8px 24px rgba(13,148,136,0.25);
 }
 
 /* ---- METRICS STRIP ---- */
@@ -564,7 +565,6 @@ p {
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
 }
 
@@ -632,7 +632,7 @@ p {
   font-size: 1.375rem;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   line-height: 1.25;
 }
 
@@ -802,7 +802,6 @@ p {
 .industry-card:hover {
   border-color: var(--color-accent);
   box-shadow: var(--shadow-md);
-  transform: translateY(-4px);
 }
 
 .industry-card__icon {
