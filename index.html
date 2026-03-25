@@ -500,4 +500,13 @@
         const href = this.getAttribute('href');
         if (href === '#') return;
         e.preventDefault();
-        const t
+        const target = document.querySelector(href);
+        if (target) {
+          const offset = target.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
