@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://beatrizterreu.github.io/portfolio/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <title>Beatriz Terreu, Design Lead</title>
+  <title>Beatriz Terreu</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,13 +79,6 @@
           <div class="hero__image-card">
             <div class="hero__image-placeholder">
               <span class="hero__initials">BT</span>
-            </div>
-          </div>
-          <div class="hero__badge">
-            <div class="hero__badge-icon">🏆</div>
-            <div class="hero__badge-text">
-              <strong>Core Value Award</strong>
-              <span>The Knot Worldwide · 2023</span>
             </div>
           </div>
         </div>
@@ -461,8 +454,20 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
     revealElements.forEach(el => observer.observe(el));
+
+    // Fallback: force-show any element already in viewport on load
+    setTimeout(() => {
+      revealElements.forEach(el => {
+        if (!el.classList.contains('visible')) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('visible');
+          }
+        }
+      });
+    }, 100);
 
     const metricsObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
