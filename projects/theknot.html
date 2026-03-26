@@ -7,7 +7,7 @@
   <title>The Knot Worldwide: Orion Design System · Beatriz Terreu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Public+Sans:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/projects.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1A1A'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='16' font-weight='bold' fill='%230D9488'>BT</text></svg>" />
@@ -55,8 +55,8 @@
       background: var(--color-tag-bg);
       color: var(--color-secondary);
     }
-    .token-chip.semantic { background: rgba(13,148,136,0.08); color: var(--color-accent); }
-    .token-chip.component { background: rgba(13,148,136,0.15); color: var(--color-accent); }
+    .token-chip.semantic { background: rgba(13,148,136,0.1); color: #0A6B62; }
+    .token-chip.component { background: rgba(13,148,136,0.18); color: #0A6B62; }
     .token-arrow {
       display: flex; align-items: center; justify-content: center;
       padding: 0 var(--space-sm);
@@ -91,6 +91,19 @@
     }
     .brand-swatch-row { display: flex; gap: 4px; margin-bottom: var(--space-md); }
     .brand-swatch { flex: 1; height: 36px; border-radius: 6px; }
+    .brand-type-row {
+      display: flex; align-items: center; gap: var(--space-md);
+      padding: var(--space-md) 0;
+      border-top: 1px solid var(--color-border);
+      margin-bottom: var(--space-md);
+    }
+    .brand-type-sample {
+      font-size: 2rem; font-weight: 700; line-height: 1; color: var(--color-primary);
+    }
+    .brand-type-sample.tk { font-family: 'Public Sans', sans-serif; }
+    .brand-type-sample.hi { font-family: 'Nunito Sans', 'Proxima Nova', sans-serif; }
+    .brand-type-label { font-size: 0.75rem; font-weight: 600; color: var(--color-primary); }
+    .brand-type-note { font-size: 0.6875rem; color: var(--color-muted); margin-top: 2px; }
     .brand-btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: var(--space-md); }
     .brand-btn-sim {
       display: inline-flex; align-items: center;
@@ -125,7 +138,7 @@
       font-family: var(--font-display);
       font-size: 2.5rem;
       font-weight: 700;
-      color: var(--color-border);
+      color: #C5CECC;
       line-height: 1;
       margin-bottom: var(--space-md);
     }
@@ -144,7 +157,7 @@
       margin-top: var(--space-sm);
       font-family: 'DM Mono', 'Fira Mono', 'Courier New', monospace;
       font-size: 0.6875rem;
-      color: var(--color-muted);
+      color: var(--color-secondary);
       background: var(--color-tag-bg);
       padding: 4px 8px;
       border-radius: 4px;
@@ -245,7 +258,7 @@
   <!-- COVER -->
   <div class="container">
     <div class="project-cover" style="background:#ffffff; padding:0; overflow:hidden;">
-      <img src="../assets/images/tkww/header.png" alt="Orion Design System" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <img src="../assets/images/tkww/header-16-9.jpg" alt="Orion Design System" style="width:100%; height:100%; object-fit:cover; display:block;" />
     </div>
   </div>
 
@@ -385,6 +398,13 @@
               <div class="brand-swatch" style="background:#d700a0;"></div>
               <div class="brand-swatch" style="background:#ac007c;"></div>
             </div>
+            <div class="brand-type-row">
+              <span class="brand-type-sample tk">Aa</span>
+              <div>
+                <div class="brand-type-label">Public Sans</div>
+                <div class="brand-type-note">Bold headings · Geometric sans</div>
+              </div>
+            </div>
             <div class="brand-btn-row">
               <button class="brand-btn-sim primary-tk">Primary</button>
               <button class="brand-btn-sim secondary-tk">Secondary</button>
@@ -403,6 +423,13 @@
               <div class="brand-swatch" style="background:#775a97;"></div>
               <div class="brand-swatch" style="background:#64418c;"></div>
               <div class="brand-swatch" style="background:#563280;"></div>
+            </div>
+            <div class="brand-type-row">
+              <span class="brand-type-sample hi">Aa</span>
+              <div>
+                <div class="brand-type-label">Proxima Nova</div>
+                <div class="brand-type-note">Clean sans · Modern &amp; approachable</div>
+              </div>
             </div>
             <div class="brand-btn-row">
               <button class="brand-btn-sim primary-hi">Primary</button>
