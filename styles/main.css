@@ -96,8 +96,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 3rem); }
-h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); }
+h2 { font-size: clamp(1.75rem, 4vw, 3rem); margin-bottom: var(--space-md); }
+h3 { font-size: clamp(1.25rem, 2.5vw, 1.75rem); margin-top: var(--space-lg); margin-bottom: var(--space-md); }
 h4 { font-size: 1.125rem; }
 
 p {
@@ -480,6 +480,14 @@ p {
   background: var(--color-accent);
 }
 
+/* Arrow nudge on button hover */
+.btn svg {
+  transition: transform var(--transition);
+}
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
 /* ---- METRICS STRIP ---- */
 .metrics {
   background: var(--color-primary);
@@ -552,11 +560,10 @@ p {
 
 .section-tag {
   display: inline-block;
-  padding: 0.25rem 0.875rem;
-  background: var(--color-tag-bg);
-  border: 2px solid rgba(13,148,136,0.35);
+  padding: 0;
+  background: none;
+  border: none;
   color: var(--color-accent);
-  border-radius: var(--radius-full);
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.06em;
