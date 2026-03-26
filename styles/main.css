@@ -1202,3 +1202,17 @@ p {
   clip: rect(0,0,0,0);
   white-space: nowrap;
 }
+
+/* Nav CTA arrow animation */
+.nav__cta svg {
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+.nav__cta:hover svg {
+  transform: translateX(3px);
+}
+
+/* Zurich card: softer zoom on hover */
+.project-card--soft-zoom:hover .project-card__image img {
+  transform: scale(1.02);
+}
