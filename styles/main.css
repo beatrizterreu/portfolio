@@ -1217,6 +1217,20 @@ p {
   transform: scale(1.02);
 }
 
+/* ---- CAREER CARDS: desktop spacing reduction ---- */
+.career-card {
+  padding: var(--space-lg) !important;
+}
+.career-grid {
+  gap: var(--space-md) !important;
+}
+.career-title-row {
+  margin-bottom: 0.25rem !important;
+}
+.career-desc {
+  margin-bottom: var(--space-md) !important;
+}
+
 /* ---- MOBILE: project cards compact ---- */
 @media (max-width: 640px) {
   .project-card__content {
@@ -1228,11 +1242,13 @@ p {
   }
   .project-card__title {
     font-size: 1.0625rem;
-    margin-bottom: var(--space-md);
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
   }
   .project-card--featured .project-card__title {
     font-size: 1.1875rem;
-    margin-bottom: var(--space-md);
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
   }
   .project-card__desc {
     font-size: 0.875rem;
@@ -1248,6 +1264,9 @@ p {
 
 /* ---- MOBILE: career cards layout ---- */
 @media (max-width: 640px) {
+  .career-card {
+    padding: var(--space-md) !important;
+  }
   .career-grid {
     grid-template-columns: auto 1fr !important;
     grid-template-areas:
@@ -1269,6 +1288,13 @@ p {
   .career-title-row {
     grid-area: title;
     align-self: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.125rem !important;
+  }
+  /* hide dot separator on mobile */
+  .career-sep {
+    display: none;
   }
   .career-date {
     grid-area: date;
@@ -1276,7 +1302,6 @@ p {
   }
   .career-desc {
     grid-area: desc;
-    margin-bottom: var(--space-md) !important;
   }
   .career-chips {
     grid-area: chips;
