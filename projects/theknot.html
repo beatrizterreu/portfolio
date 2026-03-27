@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Case study: The Knot Worldwide: Orion Design System, a multi-brand design system serving TKWW wedding brands across web and iOS. Design System Lead role combining design, strategy and team leadership. By Beatriz Terreu." />
-  <title>The Knot Worldwide: Orion Design System · Beatriz Terreu</title>
+  <meta name="description" content="Case study: The Knot Worldwide, multi-brand design system serving wedding brands across web and iOS. Design System Lead combining design, strategy and team leadership. By Beatriz Terreu." />
+  <title>The Knot Worldwide: Multi-brand Design System · Beatriz Terreu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Public+Sans:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -237,7 +237,7 @@
         <span class="project-hero__year">2023 to Present</span>
       </div>
 
-      <h1 class="project-hero__title">The Knot Worldwide: Orion Design System</h1>
+      <h1 class="project-hero__title">The Knot Worldwide: Multi-brand Design System</h1>
       <p class="project-hero__lead">Leading the evolution of a multi-brand design system serving TKWW wedding brands across web and iOS, with a B1 Build Once strategy at its core. One token architecture, 100+ foundations and components per brand, and a design system that scales across six brands without losing what makes each one distinct.</p>
 
       <div class="project-hero__info">
@@ -264,7 +264,7 @@
   <!-- COVER -->
   <div class="container">
     <div class="project-cover" style="padding:0; overflow:hidden;">
-      <img src="../assets/images/tkww/ods-header.jpg" alt="Orion Design System" style="width:100%; height:100%; object-fit:cover; display:block;" />
+      <img src="../assets/images/tkww/ods-header.jpg" alt="Multi-brand Design System, The Knot Worldwide" style="width:100%; height:100%; object-fit:cover; display:block;" />
     </div>
   </div>
 
@@ -333,12 +333,12 @@
         <!-- THE CHALLENGE -->
         <h2 class="reveal">The challenge</h2>
         <p class="reveal">The Knot Worldwide grew through acquisitions, which means its product portfolio is spread across six brands in multiple markets: The Knot and WeddingWire (US), WeddingWire Canada, Hitched (UK), Bodas, Mariages, and Matrimonio (Spain, Portugal, France, and Italy), WeddingWire India, and Wedding Pro. Each had its own visual identity, codebase, and design history. Each had evolved independently, with duplicated effort, fragmented tooling, and no shared foundation.</p>
-        <p class="reveal">The complexity goes beyond brand count. TKWW serves two fundamentally different products, couples planning their wedding and wedding professionals growing their business, across the same platforms. Orion Design System needs to work for both, at scale, across all brands and surfaces.</p>
-        <p class="reveal">The challenge was architectural and strategic: build a single system capable of expressing six distinct brands without flattening them, align design and engineering across teams that had never shared a foundation, and support a company-wide B1 (Build Once) strategy where Orion plays a central role. One architecture, no compromises on brand fidelity, and a system that can evolve as the company does.</p>
+        <p class="reveal">The complexity goes beyond brand count. TKWW serves two fundamentally different products, couples planning their wedding and wedding professionals growing their business, across the same platforms. the design system needs to work for both, at scale, across all brands and surfaces.</p>
+        <p class="reveal">The challenge was architectural and strategic: build a single system capable of expressing six distinct brands without flattening them, align design and engineering across teams that had never shared a foundation, and support a company-wide B1 (Build Once) strategy where the system plays a central role. One architecture, no compromises on brand fidelity, and a system that can evolve as the company does.</p>
 
         <!-- TOKEN ARCHITECTURE -->
         <h2 class="reveal">Token architecture</h2>
-        <p class="reveal">The foundation of Orion Design System is a three-layer token system built on the W3C DTCG format. Each layer has a specific responsibility, and the chain flows in one direction only.</p>
+        <p class="reveal">The foundation of the system is a three-layer token system built on the W3C DTCG format. Each layer has a specific responsibility, and the chain flows in one direction only.</p>
 
         <div class="token-layer-grid reveal">
           <div class="token-layer">
@@ -389,7 +389,7 @@
 
         <!-- SIX BRANDS -->
         <h2 class="reveal">Six brands, one system</h2>
-        <p class="reveal">Orion supports six brands across TKWW's portfolio, with The Knot and Hitched as the two most established in the system today. Each brand lives on the same architecture but expresses it differently. The semantic layer is where the system decouples brand identity from structural behaviour: <code>sColor.text.brand</code> maps to <code>pColor.primary.400</code> for The Knot (#d700a0) but to <code>pColor.primary.300</code> for Hitched (#775a97). Different values, same intent, same component.</p>
+        <p class="reveal">The system supports six brands across TKWW's portfolio, with The Knot and Hitched as the two most established in the system today. Each brand lives on the same architecture but expresses it differently. The semantic layer is where the system decouples brand identity from structural behaviour: <code>sColor.text.brand</code> maps to <code>pColor.primary.400</code> for The Knot (#d700a0) but to <code>pColor.primary.300</code> for Hitched (#775a97). Different values, same intent, same component.</p>
 
         <div class="brand-compare reveal">
           <div class="brand-panel">
@@ -449,7 +449,7 @@
 
         <!-- PLATFORM STRATEGY -->
         <h2 class="reveal">Platform strategy: Web and iOS</h2>
-        <p class="reveal">Orion Design System serves both Web and iOS from the same token base, while accommodating the structural differences each platform demands. 18 components are shared across both platforms. 10 are iOS-exclusive (TabBar, PillBar, NavigationBar, Toggle, StarsRating, DrawerPresentation...). 10 are web-exclusive (SubNav, SideNav, DatePicker, Carousel, Pagination, Breadcrumb...).</p>
+        <p class="reveal">The system serves both Web and iOS from the same token base, while accommodating the structural differences each platform demands. 18 components are shared across both platforms. 10 are iOS-exclusive (TabBar, PillBar, NavigationBar, Toggle, StarsRating, DrawerPresentation...). 10 are web-exclusive (SubNav, SideNav, DatePicker, Carousel, Pagination, Breadcrumb...).</p>
         <p class="reveal">Platform deltas are documented and intentional. <code>cButton.size.lg</code> is 48px on web, 50px on iOS. <code>cInput.height</code> is 48px on web, 44px on iOS. <code>cOverlay.opacity.dark</code> is 70% on web (visual depth layer) vs 20% on iOS (native navigation convention). These are not inconsistencies; they are platform-appropriate decisions baked into the token structure, traceable from Figma to production.</p>
 
         <!-- DESIGN TO CODE PIPELINE -->
