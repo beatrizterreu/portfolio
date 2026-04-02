@@ -800,7 +800,7 @@ p {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, #FFD700, #FFA500);
+  background: #1C1A14;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1070,7 +1070,6 @@ p {
 .footer__copy {
   font-size: 0.875rem;
   color: var(--color-muted);
-  max-width: 100%;
 }
 
 .footer__links {
@@ -1174,7 +1173,7 @@ p {
     margin: var(--space-xl) 0;
   }
 
-  .footer__inner { flex-direction: column; text-align: center; }
+  .footer__inner { flex-direction: column; align-items: center; text-align: center; }
 
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.875rem; }
