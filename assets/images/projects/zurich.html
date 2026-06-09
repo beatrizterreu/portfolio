@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case study: Zurich Insurance: Pet insurance app design. Designing the end-to-end mobile experience for contracting pet insurance, from persona research to high-fidelity prototype. By Beatriz Terreu, Senior UX/UI Designer." />
+  <title>Zurich Insurance: Case Study · Beatriz Terreu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/projects.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1A1A'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='16' font-weight='bold' fill='%230D9488'>BT</text></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="../index.html" class="nav__logo">Beatriz Terreu</a>
+        <ul class="nav__links">
+          <li><a href="../index.html#projects" class="nav__link">Projects</a></li>
+          <li><a href="../index.html#about" class="nav__link">About</a></li>
+          <li><a href="../index.html#experience" class="nav__link">Experience</a></li>
+          <li><a href="mailto:bterreu@gmail.com" class="nav__cta">
+              Contact
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a></li>
+        </ul>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-nav">
+      <a href="../index.html#projects" class="nav__link">Projects</a>
+      <a href="../index.html#about" class="nav__link">About</a>
+      <a href="mailto:bterreu@gmail.com" class="nav__cta" style="align-self:flex-start;">
+              Contact
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+    </div>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-hero__back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to projects
+      </a>
+
+      <div class="project-hero__meta">
+        <span class="project-hero__category">Insurance · UX/UI Design · Mobile App</span>
+        <span class="project-hero__year">2020</span>
+      </div>
+
+      <h1 class="project-hero__title">Zurich Insurance: Pet insurance app design</h1>
+      <p class="project-hero__lead">Miriam wants to contract a pet insurance for her new friend Maila, a Bull Terrier. Let's give her the best experience during this journey. Designing the end-to-end mobile app experience for contracting pet insurance with Zurich: from user research and competitor analysis to user flow, wireframes, and interactive prototype.</p>
+
+      <div class="project-hero__info">
+        <div class="project-hero__info-item">
+          <span class="project-hero__info-label">Client</span>
+          <div class="project-hero__info-value">Zurich Insurance Group</div>
+        </div>
+        <div class="project-hero__info-item">
+          <span class="project-hero__info-label">Role</span>
+          <div class="project-hero__info-value">Senior UX/UI Designer</div>
+        </div>
+        <div class="project-hero__info-item">
+          <span class="project-hero__info-label">Duration</span>
+          <div class="project-hero__info-value">1 month</div>
+        </div>
+        <div class="project-hero__info-item">
+          <span class="project-hero__info-label">Tools</span>
+          <div class="project-hero__info-value">Sketch · Abstract · Miro</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVER -->
+  <div class="container">
+    <div class="project-cover" style="background: #0d1b4a; padding: 0; overflow: hidden;">
+      <img src="../assets/images/zurich/zurich-header.jpg" alt="Zurich Insurance app, services home screen on iPhone" style="width:100%; height:100%; object-fit:cover; display:block;"  loading="eager" />
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container" style="padding-bottom: var(--space-3xl);">
+    <div class="project-content">
+
+      <main class="project-body">
+
+        <!-- METRICS -->
+        <div class="outcomes-grid reveal">
+          <div class="outcome-card">
+            <span class="outcome-card__value">1</span>
+            <span class="outcome-card__label">End-to-end flow, from app download to policy confirmation</span>
+          </div>
+          <div class="outcome-card">
+            <span class="outcome-card__value">3</span>
+            <span class="outcome-card__label">Coverage plans designed: Basic, Plus, Pro</span>
+          </div>
+          <div class="outcome-card">
+            <span class="outcome-card__value">6</span>
+            <span class="outcome-card__label">Insurance categories in the app architecture</span>
+          </div>
+        </div>
+
+        <!-- PROCESS -->
+        <div class="process-steps reveal">
+          <div class="process-step">
+            <div class="process-step__num">01</div>
+            <div class="process-step__title">Understand</div>
+            <div class="process-step__desc">User needs and context</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">02</div>
+            <div class="process-step__title">Analyze</div>
+            <div class="process-step__desc">Competitors and inspiration</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">03</div>
+            <div class="process-step__title">Design</div>
+            <div class="process-step__desc">User flow and wireframes</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">04</div>
+            <div class="process-step__title">Prototype</div>
+            <div class="process-step__desc">High-fidelity and testing</div>
+          </div>
+        </div>
+
+        <!-- THE CHALLENGE -->
+        <h2 class="reveal">The challenge</h2>
+        <p class="reveal">The goal was to design an application for contracting pet insurance within the Zurich ecosystem. The challenge was not just technical: it was about making insurance feel human. Traditional insurance companies force users through long phone calls, dense forms, and opaque processes. The opportunity here was to design something radically simpler: a mobile experience that felt as natural and trustworthy as any other app Miriam uses every day.</p>
+
+        <!-- UNDERSTAND USER NEEDS -->
+        <h2 class="reveal">Understanding user needs</h2>
+        <p class="reveal">Every decision in this project was anchored in a real person. Meet Miriam: a 35-year-old illustrator who has just arrived in Barcelona. She spends most of her day at a coworking space in the city center, is always connected, and lives on her phone. Having just settled in, she decided to adopt a dog. After visiting several kennels, she found Maila, a 3-year-old Bull Terrier.</p>
+        <p class="reveal">Miriam wants to protect Maila with insurance, but she has zero patience for the traditional insurance process: the waiting, the calls, the paperwork. She wants something she can do from her phone, on her terms, in minutes. That gap between her expectation and the current reality was the entire design brief.</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-miriam.jpg" alt="Miriam and her dog, user persona for the Zurich pet insurance project" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="project-callout reveal">Designing with Miriam in mind meant every decision had a face, a context, and a reason.</blockquote>
+
+        <!-- ANALYZE -->
+        <h2 class="reveal">Analyze</h2>
+        <p class="reveal">Before touching any design tools, I ran a deep analysis of Zurich's existing insurance products and their position in the market. From there, I mapped their main competitors to understand what was already out there: what information was valuable for users (coverage details, transparent pricing, plan comparison) versus what was valuable for the insurer (pet data, owner identification, payment method).</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-moodboard-i.jpg" alt="Competitor analysis, pet insurance websites from DOGE+, MAPFRE, AXA, Allianz, Verti, and others" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <p class="reveal">The competitive landscape was revealing: most insurance experiences were overcomplicated, heavy on form fields, and offered no real hierarchy of information. They all felt designed for the insurer, not the user. I also created a moodboard to explore how to organize content and establish a clear information architecture: both what to include and what to deliberately leave out.</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-moodboard-ii.jpg" alt="Competitor analysis, detailed flow and form analysis across insurance apps" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <p class="reveal">The UI inspiration moodboard went beyond insurance. I looked at fintech and health apps that had solved similar problems: plan comparison that feels light, step-by-step data entry that doesn't feel like a tax form, and confirmation moments that feel like a celebration rather than a transaction.</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-moodboard-ui.jpg" alt="UI inspiration moodboard, fintech, health, and insurance apps showing modern mobile patterns" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- USER FLOW -->
+        <h2 class="reveal">User flow</h2>
+        <p class="reveal">With a clear understanding of the context and content requirements, I mapped the complete user flow: from the very first app download, through sign-up and onboarding, to the home screen and all the way through the pet insurance contracting journey. Every decision point was considered, including error states, quote confirmations sent by email, and the final policy confirmation screen.</p>
+        <p class="reveal">The flow covers the full journey: new user or returning user, social login or manual registration, home navigation with six service categories, and the pet insurance sub-flow including quote request, plan selection, data entry, final quote, and policy purchase.</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-user-flow.jpg" alt="Complete user flow, from app download to pet insurance policy confirmation" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- WIREFRAMES -->
+        <h2 class="reveal">Wireframes</h2>
+        <p class="reveal">The design process started on paper. Quick, low-fidelity sketches to explore layout structures and navigation logic before committing to screens. This phase was about speed and iteration: testing ideas cheaply before investing in high-fidelity work.</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-wireframes-lo.jpg" alt="Low-fidelity wireframe sketches on paper" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <p class="reveal">From the sketches, I moved directly into high-fidelity screens applying Zurich's brand guidelines. The final design covers the complete contracted flow: the services home screen with all six insurance categories, the pet insurance landing with plan details, the coverage comparison table (Basic, Plus, Pro), the data entry forms, the final quote screen, and the confirmation: "Congratulations! Now relax, we will take care of Maila's health."</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-wireframes-hi.jpg" alt="High-fidelity screens, Zurich app home, pet insurance plans, quote, and confirmation screens" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- PROTOTYPE -->
+        <h2 class="reveal">Prototype</h2>
+        <p class="reveal">Putting all the screens together, I built an interactive prototype covering the full pet insurance journey: from the moment the user is logged in through to the final policy confirmation. The prototype connects every screen in the contracting flow, allowing for end-to-end testing of the experience before any development work begins.</p>
+
+        <div class="project-gallery reveal">
+          <div class="gallery-grid gallery-grid--full">
+            <div class="gallery-item">
+              <img src="../assets/images/zurich/zurich-proto.gif" alt="Interactive prototype, Zurich pet insurance app full contracting flow" loading="lazy" style="width:100%; display:block;" />
+            </div>
+          </div>
+        </div>
+
+        <!-- LEARNINGS -->
+        <h2 class="reveal">What I learned</h2>
+        <p class="reveal">Working from a real persona made every design decision easier to justify. When you have Miriam in mind, her context, her frustrations, her expectations, it becomes obvious what to simplify and what to keep. Insurance is a trust product. The UX has to earn that trust before the user has ever filed a claim.</p>
+        <p class="reveal">The competitor analysis was also a reminder that most industries are still designing for the institution, not the person. The bar for delight in financial services is low, which means the opportunity for a genuinely good experience is enormous. Zurich's brand had the credibility. The design's job was to make that credibility feel accessible.</p>
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="project-sidebar">
+
+        <div class="sidebar-card">
+          <div class="sidebar-card__title">Sector</div>
+          <div class="sidebar-tags">
+            <span class="tag">Insurance</span>
+            <span class="tag">Fintech</span>
+            <span class="tag">Mobile</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card__title">Tools</div>
+          <div class="sidebar-tags">
+            <span class="tag">Sketch</span>
+            <span class="tag">Abstract</span>
+            <span class="tag">Miro</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card__title">Methods</div>
+          <div class="sidebar-tags">
+            <span class="tag">User Persona</span>
+            <span class="tag">Competitor Analysis</span>
+            <span class="tag">Moodboard</span>
+            <span class="tag">Information Architecture</span>
+            <span class="tag">User Flow</span>
+            <span class="tag">Wireframing</span>
+            <span class="tag">Prototyping</span>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card__title">Deliverables</div>
+          <p>User persona · Competitor analysis · UI moodboard · User flow · Low-fi wireframes · High-fi screens · Interactive prototype</p>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- NEXT PROJECT -->
+  <div class="container">
+        <a href="nimbie.html" class="next-project">
+      <div>
+        <span class="next-project__label">Next project</span>
+        <h3 class="next-project__title">Nimbie, personal app built with vibe coding</h3>
+      </div>
+      <span class="next-project__arrow">→</span>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">© 2026 Beatriz Terreu</p>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/beatrizterreu/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+          <a href="mailto:bterreu@gmail.com" class="footer__link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); }, { passive: true });
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    revealElements.forEach(el => observer.observe(el));
+    setTimeout(() => {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+    }, 800);
+  </script>
+</body>
+</html>
