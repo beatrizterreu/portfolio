@@ -137,6 +137,37 @@
       line-height: 1.6;
       margin: 0;
     }
+    .store-badges {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+      margin: var(--space-lg) 0;
+    }
+    .appstore-badge {
+      display: inline-block;
+      transition: opacity 0.2s ease;
+    }
+    .appstore-badge:hover {
+      opacity: 0.8;
+    }
+    .store-badge--soon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      height: 42px;
+      padding: 0 1rem;
+      border-radius: 7px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.04);
+      font-size: 0.8125rem;
+      color: var(--color-muted);
+      font-family: var(--font-body);
+      white-space: nowrap;
+    }
+    .store-badge--soon svg {
+      opacity: 0.4;
+    }
   </style>
 </head>
 <body>
@@ -185,6 +216,16 @@
 
       <h1 class="project-hero__title">Nimbi, AI-powered bedtime stories</h1>
       <p class="project-hero__lead">A solo product built in 5 days: an app that generates personalized bedtime stories for families using AI, designed to do its job and then get out of the way. Dark-mode native, local-first, and built with Flutter and Claude. The design challenge was not creating engagement. It was designing a product that deliberately avoids it.</p>
+
+      <div class="store-badges">
+        <a href="https://apps.apple.com/us/app/nimbi-moon/id6778561691" target="_blank" rel="noopener" class="appstore-badge" aria-label="Download Nimbi on the App Store">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="140" height="42" />
+        </a>
+        <span class="store-badge--soon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.341a7.5 7.5 0 1 1-11.052-10.177A7.5 7.5 0 0 1 17.523 15.34zm1.414 1.414A9.5 9.5 0 1 0 4.063 3.755a9.5 9.5 0 0 0 14.874 13zm-6.435-9.252v5.25a.75.75 0 0 1-1.5 0v-5.25a.75.75 0 0 1 1.5 0zm0 7.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0z"/></svg>
+          Android · Coming soon
+        </span>
+      </div>
 
       <div class="project-hero__info">
         <div class="project-hero__info-item">
